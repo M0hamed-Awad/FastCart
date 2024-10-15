@@ -1,0 +1,276 @@
+/* Register Page */
+
+:root {
+    --primary-color-shade1: #EA0505;
+    --bright-primary-color: #ff5d5d;
+    --secondary-color: #14D959;
+    --bright-secondary-color: #40db91;
+    --secondary-color-shade1: #13D055;
+    --secondary-color-shade2: #0D8C39;
+    --secondary-color-shade3: #002f11;
+    --input-color: #e6fae6;
+    --bright-color: #EDF2E9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Arimo", sans-serif;
+}
+
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/Form_Assets/Background_2.jpg);
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: var(--bright-color);
+    box-shadow: 0 5px 15px rgba(132, 132, 132, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    /* aspect-ratio: 2 / 1; */
+    width: 130px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    position: relative;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 650;
+    color: var(--dark-color);
+    transition: 0.3s ease;
+}
+
+#navbar li a svg {
+    fill: var(--dark-color);
+    width: 30px;
+}
+
+#navbar li a svg:hover,
+#navbar li a.active svg {
+    fill: var(--secondary-color);
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: var(--secondary-color);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+}
+
+#navbar #shopping-bag .icon-cart::after,
+#navbar #shopping-bag .icon-cart::after a svg:hover {
+    content: "";
+    width: 70%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close-mark {
+    display: none;
+}
+
+.wrapper {
+    margin-top: 5%;
+    background-color: rgba(237, 242, 233, 0.5);
+    backdrop-filter: blur(10px);
+    min-height: 50vh;
+    width: max(40%, 600px);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--secondary-color-shade3);
+}
+
+body #form {
+    width: min(400px, 100%);
+    margin-top: 0px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#form .input-control {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+body #form label {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bright-secondary-color);
+    fill: var(--bright-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#form .input-control input {
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--input-color);
+    border-left: none;
+    background-color: var(--input-color);
+    transition: 250ms ease;
+}
+
+body #form input:hover {
+    border: 2px solid var(--bright-secondary-color);
+}
+
+body #form input:focus {
+    outline: none;
+    border-color: var(--secondary-color-shade2);
+}
+
+#form .input-control.success input {
+    border-color: var(--bright-secondary-color)
+}
+
+#form .input-control.failure input {
+    border-color: var(--bright-primary-color)
+}
+
+#form .input-control:has(input:focus)>label {
+    background-color: var(--secondary-color-shade2);
+}
+
+#form .input-control input::placeholder {
+    color: var(--secondary-color-shade2);
+    opacity: 0.8;
+}
+
+#form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 0.85em 4em;
+    background-color: var(--secondary-color);
+    color: var(--bright-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+#form button:hover {
+    background-color: var(--secondary-color-shade1);
+    color: var(--secondary-color-shade3);
+    transform: scale(1.08);
+}
+
+#form button:focus {
+    outline: none;
+    background-color: var(--secondary-color-shade2);
+}
+
+.wrapper p a {
+    text-decoration: none;
+    color: var(--secondary-color-shade2);
+}
+
+.wrapper p a:hover {
+    text-decoration: underline;
+}
+
+.wrapper #form .incorrect label {
+    background-color: var(--bright-primary-color);
+}
+
+.wrapper #form .incorrect input {
+    border-color: var(--bright-primary-color);
+}
+
+.input-control #error-message {
+    font-size: 0.5625em;
+    color: var(--bright-primary-color);
+    height: 13px;
+    text-align: center;
+    color: var(--primary-color-shade1);
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    body .wrapper {
+        width: min(600px, 100%);
+        border-radius: 0;
+    }
+}

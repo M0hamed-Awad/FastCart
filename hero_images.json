@@ -1,0 +1,30 @@
+[
+    {
+        "h4_text": "Trade-in-offer",
+        "h2_text": "Super value deals",
+        "h1_text": "On all products",
+        "p_text": "Save more with coupons $ up to 70% off!",
+        "image": "/assets/Hero_Images/Hero_Image1.png"
+    },
+    {
+        "h4_text": "Can't Miss It",
+        "h2_text": "New Seasonal Offers",
+        "h1_text": "On all products",
+        "p_text": "Save more with coupons $ up to 70% off!",
+        "image": "/assets/Hero_Images/Hero_Image2.png"
+    },
+    {
+        "h4_text": "All Fashionable Modern Clothes",
+        "h2_text": "Keep It Up",
+        "h1_text": "Anything",
+        "p_text": "Save more with coupons $ up to 70% off!",
+        "image": "/assets/Hero_Images/Hero_Image3.png"
+    },
+    {
+        "h4_text": "Trade-in-offer",
+        "h2_text": "Super value deals",
+        "h1_text": "On all products",
+        "p_text": "Save more with coupons $ up to 70% off!",
+        "image": "/assets/Hero_Images/Hero_Image4.png"
+    }
+]

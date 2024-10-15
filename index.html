@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastCart</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/Logo_Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="body-elements-container">
+        <header id="header">
+            <a href="#"><img src="assets/Logo.png" class="logo" alt="Logo"></a>
+            <nav>
+                <ul id="navbar">
+                    <li> <a class="active" href="index.html">Home</a></li>
+                    <li> <a href="views/register_page.html">Sign UP</a></li>
+                    <li> <a href="views/login_page.html">Login</a></li>
+                    <li id="shopping-bag">
+                        <div class="icon-cart">
+                            <a href="#" onclick="preventDefaultBehavior(event)">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
+                                    width="48px" fill="#e8eaed">
+                                    <path
+                                        d="M229-55q-39.05 0-66.52-27.47Q135-109.95 135-149v-490q0-39.46 27.48-67.23Q189.95-734 229-734h84v-10q2-68 50.5-115T480-906q68 0 116.5 47T647-744v10h84q39.46 0 67.23 27.77Q826-678.46 826-639v490q0 39.05-27.77 66.53Q770.46-55 731-55H229Zm179-679h144v-10q-2-28-22.5-47.5T480-811q-29 0-49.5 19.5T408-744v10Zm192 215q20 0 33.5-13.5T647-566v-73h-94v73q0 20 13.5 33.5T600-519Zm-240 0q20 0 33.5-13.5T407-566v-73h-94v73q0 20 13.5 33.5T360-519Z" />
+                                </svg>
+                            </a>
+                            <span class="icon-cart-span">0</span>
+                        </div>
+                    </li>
+                    <a href="#" id="close-mark"><i class="fa-solid fa-xmark"></i></a>
+                </ul>
+            </nav>
+            <div id="mobile">
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="hamburger-menu" class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+
+        <section id="hero">
+            <div class="image-slider">
+                <div class="slide">
+                    <img id="slide-images" src="" alt="">
+                    <div class="slide-info">
+                        <h4>Trade-in-offer</h4>
+                        <h2>Super value deals</h2>
+                        <h1>On all products</h1>
+                        <p>Save more with coupons $ up to 70% off!</p>
+                        <a href="#product1"><button id="shop-button" class="fill-hover-btn">Shop Now</button></a>
+                    </div>
+                </div>
+                <div class="image-slider-navigation">
+                    <i class="fa-solid fa-caret-left prev-btn" onclick="plusSlides(-1)"></i>
+                    <i class="fa-solid fa-caret-right next-btn" onclick="plusSlides(1)"></i>
+                </div>
+                <div class="image-slider-navigation-visibility">
+                    <div class="slide-icon active"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature" class="section-p1">
+            <div class="fe-box">
+                <img src="assets/Features/Green_Version/Free_Shipping.png" alt="Free Shipping">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img src="assets/Features/Green_Version/Online_Order.png" alt="Free Shipping">
+                <h6>Online Order</h6>
+            </div>
+            <div class="fe-box">
+                <img src="assets/Features/Green_Version/Money_Savings.png" alt="Free Shipping">
+                <h6>Money Saving</h6>
+            </div>
+            <div class="fe-box">
+                <img src="assets/Features/Green_Version/Promotions.png" alt="Free Shipping">
+                <h6>Promotions</h6>
+            </div>
+            <div class="fe-box">
+                <img src="assets/Features/Green_Version/Customer_relationship_V2.png" alt="Free Shipping">
+                <h6>Happy Sell</h6>
+            </div>
+            <div class="fe-box">
+                <img src="assets/Features/Green_Version/Service_24_7.png" alt="Free Shipping">
+                <h6>Support</h6>
+            </div>
+        </section>
+
+        <section id="product1" class="product1 section-p1" data-category="men's clothing">
+            <h2>All what you need in one place</h2>
+            <p>Fashionable Modern Men / Women Clothing, Jewelery, Tech Devices Collection</p>
+            <div class="pro-container">
+            </div>
+        </section>
+
+        <section id="banner" class="section-m1">
+            <h4>Special Offers</h4>
+            <h2>Up to <span>70% OFF</span> - All 23/24 Jerseys Collection</h2>
+            <button class="normal">Explore More</button>
+        </section>
+
+        <section id="se-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>Crazy deals</h4>
+                <h2>Buy 1 get 1 Free</h2>
+                <span>The best retro shirts is on sale at FastCart</span>
+                <button class="white fill-hover-btn">Learn More</button>
+            </div>
+            <div class="banner-box banner-box2">
+                <h4>Fall / Winter</h4>
+                <h2>Upcoming Season</h2>
+                <span>The best retro shirts is on sale at FastCart</span>
+                <button class="white fill-hover-btn">Collection</button>
+            </div>
+        </section>
+
+        <section id="banner-3">
+            <div class="banner-box">
+                <h2>Seasonal Sales</h2>
+                <h3>Season 23/24 -50% OFF</h3>
+            </div>
+            <div class="banner-box banner-box2">
+                <h2>High Quality Football Shoes</h2>
+                <h3>Fashionable Sports Shoes</h3>
+            </div>
+            <div class="banner-box banner-box3">
+                <h2>New Sports Wear Collection</h2>
+                <h3>Fall / Winter</h3>
+            </div>
+        </section>
+
+        <section id="news-letter" class="section-m1 section-p1">
+            <div class="news-text">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about out latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="news-letter-form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+
+            <div class="footer-container">
+                <div class="column">
+                    <img src="assets/Logo.png" class="logo" alt="Logo">
+                    <h4>Contact</h4>
+                    <p><strong>Address:</strong> Egypt - Cairo</p>
+                    <p><strong>Phone:</strong> +20</p>
+                    <p><strong>Hours:</strong> 10:00 - 22:00, Sat - Thur</p>
+                    <div class="follow">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="www.linkedin.com/in/mohamed-awadallah-ma" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://x.com/Moohamed_Awad" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/mohamed___3wad/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://discord.com/users/577278992336551936" target="_blank"><i
+                                    class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h4>About</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <div class="column">
+                    <h4>My Account</h4>
+                    <a href="#">Sign In</a>
+                    <a href="#">View Cart</a>
+                    <a href="#">My Wishlist</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">Help</a>
+                </div>
+
+                <div class="column install">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="row">
+                        <img src="assets/Stores/App_Store.png" alt="App Store">
+                        <img src="assets/Stores/Google_Play.png" alt="Google Play">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <img src="assets/Payment_Methods.png" alt="Payment_Methods" width="250px">
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024, Mohamed Awadallah, FastCart. All Rights Reserved.</p>
+            </div>
+
+            <span id="up-btn"><i class="fa-solid fa-angles-up"></i></span>
+
+        </footer>
+    </div>
+
+    <div class="cart-tab">
+        <h1>Shopping Cart</h1>
+        <div class="cart-list">
+        </div>
+        <div class="btn-container">
+            <button class="close-btn">Close</button>
+            <button class="check-out-btn">Check out</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
